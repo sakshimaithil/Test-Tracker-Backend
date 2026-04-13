@@ -2,64 +2,13 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Run FastAPI server",
-			"type": "shell",
-			"command": "uvicorn main:app --reload",
-			"args": [],
-			"isBackground": false,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
 			"label": "Run FastAPI Backend",
 			"type": "shell",
-			"command": "uvicorn main:app --reload",
-			"args": [],
-			"isBackground": true,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Run FastAPI Backend",
-			"type": "shell",
-			"command": "uvicorn main:app --reload",
-			"args": [],
-			"isBackground": true,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Run FastAPI Backend",
-			"type": "shell",
-			"command": "uvicorn main:app --reload",
-			"args": [],
-			"isBackground": true,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Run FastAPI Backend",
-			"type": "shell",
-			"command": "uvicorn main:app --reload",
-			"args": [],
-			"isBackground": true,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Run FastAPI Backend",
-			"type": "shell",
-			"command": "c:/Users/Sakshi/Desktop/test-tracker/.venv/Scripts/python.exe -m uvicorn main:app --reload",
-			"args": [],
-			"isBackground": true,
-			"problemMatcher": [],
-			"group": "build"
-		},
-		{
-			"label": "Run FastAPI Backend",
-			"type": "shell",
-			"command": "c:/Users/Sakshi/Desktop/test-tracker/.venv/Scripts/python.exe -m uvicorn main:app --reload",
-			"args": [],
+			"command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+			"args": ["-m", "uvicorn", "main:app", "--reload"],
+			"options": {
+				"cwd": "${workspaceFolder}\\new_backend"
+			},
 			"isBackground": true,
 			"problemMatcher": [],
 			"group": "build"
